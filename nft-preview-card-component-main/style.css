@@ -1,0 +1,127 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/**/
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkbluemain : hsl(217, 54%, 11%); /*(main BG)*/
+    --Verydarkbluecard : hsl(216, 50%, 16%); /*(card BG)*/
+    --Verydarkblueline : hsl(215, 32%, 27%); /*(line)*/
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Verydarkbluemain);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 325px;
+    height: 547px;
+    background-color:var(--Verydarkbluecard);
+    border-radius: 12px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 269px;
+    margin: 22px 22px 0 22px;
+    
+}
+
+.img1{
+    width: 285px;
+    height: 264px;
+    border-radius: 12px;
+    cursor: pointer; 
+    
+}
+
+.imgd2{
+    
+    position: absolute;
+    border-radius: 12px;
+    width: 285px;
+    height: 264px;
+    background-color: var(--Cyan);
+    top:156px;
+    filter: opacity(0.5);
+}
+
+.icon-img2{
+    position: absolute;
+    top: 32vh;
+    right: 45vw;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+    margin: 0 20px;
+    justify-content: space-around;
+}
+.content2 a{
+    text-decoration: none;
+    text-align: left;
+    color: var(--Cyan);
+}
+.content2 a h1{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.content2 p{
+    color: var(--Softblue);
+    font-weight: 300;
+}
+.prices{
+    display: flex;
+    margin: 27px 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--Verydarkblueline);
+    font-size: 13px;
+}
+.prices span{
+    display: flex;
+}
+.prices span:first-child{
+    color: var(--Cyan);
+}
+.prices span:last-child{
+    color: var(--Softblue);
+}
+.prices span img{
+    margin-right: 4px;
+    
+}
+.botton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+.img-avatar{
+    width: 30px;
+    border: 1px solid;
+    border-radius: 100%;
+    color: var(--White);
+}
+.inactive{
+    display: none;
+}

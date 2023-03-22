@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <div class="top-content">
+    <h1>S P L I </h1>
+    <h1>T T E R</h1>
+    
+  </div>
+  <div class="botton-content tip-calculator">
+    <div class="leftSideDesktop">
+      <div class="title bill">
+        <p>Bill</p>
+      
+        <div class="form dolar-icon"><img src="./images/icon-dollar.svg" alt=""> <input type="number" placeholder="0" class="input-form" id="bill" onkeyup="tomaContenidoBill(this.value)"></div>
+      </div>
+  
+      <div class="title tip-amout">
+        <p>Select Tip %</p>
+        <div class="buttons">
+          <button class="amout cinco">5%</button>
+          <button class="amout diez">10%</button>
+          <button class="amout quince">15%</button>
+          <button class="amout ticinco">25%</button>
+          <button class="amout cincuenta">50%</button>
+          <input type="number" placeholder="Custom" id="custom-tip" class="amout
+          " onkeyup="customTip(this.value)" >
+        </div>
+
+      </div>
+      <div class="title people">
+        <p>Number of People</p>
+        <div class="form person-icon"><img src="./images/icon-person.svg"> <input type="number" placeholder="0" class="input-form" id="people" onkeyup="tomaContenidoPeople(this.value)"></div>
+      </div>
+  </div>
+  <div class="rightSideDesktop">
+    <div class="content">
+      <div class="result">
+        <div class="top-result-content">
+          <div class="result-content">
+            <div class="result-left-content">
+              <h2>Tip Amount</h2>    
+              <h3>/ person</h3>
+            </div>
+            
+           
+              <div class="result-right-content">
+                <span id="tip-amount-result">$0.00</span>
+            </div>
+            
+            
+           </div>
+          <div class="result-content">
+            <div class="result-left-content">
+              <h2>Total</h2> 
+              <h3>/ person</h3> 
+          </div>
+              <div class="result-right-content">
+                <span id="total-amount-result">$0.00</span>
+              </div>
+                
+          </div>
+         
+         
+
+         
+        </div>
+        <div class="botton-result-content">
+          <button class="button-reset">RESET</button> 
+        </div>
+      
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

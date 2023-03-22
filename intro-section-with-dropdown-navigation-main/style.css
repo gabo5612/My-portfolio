@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+:root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+    --fp:18px
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+body{
+    min-width: 375px;
+}
+
+nav{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+
+}
+.leftSideNavBar{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.logo{
+    padding: 10px 0 0 10px;
+}
+.contentMenu a{
+    text-decoration: none;
+    color: var(--MediumGray);
+    font-weight: 500;
+}
+.contentMenu img{
+    width: 12px;
+    height: 10px;
+    margin: 0;
+}
+.loginOptions a{
+    text-decoration: none;
+    color: var(--MediumGray);
+    font-weight: 500;
+}
+.hamburgerMenu{
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-main{
+    width: 100%;
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+.content2 h1{
+    font-family: 700;
+    margin: 12px;
+    font-size: 2em;
+}
+.content2 p{
+    color: var(--MediumGray);
+    margin: 0 10px;
+    line-height: 1.5;
+}
+.buttonLearn{
+    border: none;
+    color: var(--AlmostWhite);
+    background-color: var(--AlmostBlack);
+    font-family: 'Epilogue', sans-serif;
+    border-radius: 12px;
+    padding: 17px 20px;
+    margin: 22px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.buttonLearn:hover{
+    color: var(--AlmostBlack);
+    background-color: var(--AlmostWhite);
+    border: 1px solid var(--AlmostBlack);
+
+}
+.logosbotton{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 16px;
+    
+}
+.logosbotton img{
+    
+    height: 16px;
+    
+}
+.menuFeature{
+    display: flex;
+    width: 130px;
+    height: 140px;
+    background-color: var(--AlmostWhite);
+    padding: 1px;
+    margin: 0;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 1px 24px 53px -13px rgb(0 0 0 / 61%);
+    -webkit-box-shadow: 1px 24px 53px -13px rgb(0 0 0 / 61%);
+    -moz-box-shadow: 1px 24px 53px -13px rgba(0,0,0,0.61);
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    
+}
+
+.menuFeature li{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin: 12px;
+    cursor: pointer;
+}
+.menuCompany{
+    display: flex;
+    width: 110px;
+    height: 106px;
+    background-color: var(--AlmostWhite);
+    padding: 1px;
+    margin: 0;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 1px 24px 53px -13px rgb(0 0 0 / 61%);
+    -webkit-box-shadow: 1px 24px 53px -13px rgb(0 0 0 / 61%);
+    -moz-box-shadow: 1px 24px 53px -13px rgba(0,0,0,0.61);
+    position: absolute;
+    top: 60px;
+    left: 260px;
+}
+.menuCompany li{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin: 12px;
+    cursor: pointer;
+}
+.logosbotton img:nth-child(2){
+    width: 44px;
+    height: 21px;
+}
+.menuMobile{
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.containerAside{
+    background-color:var(--AlmostWhite);
+    height: 100vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contentAside1{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    cursor: pointer;
+    
+}
+.contentAside2{
+    color: var(--MediumGray);
+    position: relative;
+    
+}
+.contentAside2 li{
+    list-style: none;
+    gap: 5px;
+    margin: 0 24px 24px 24px;
+
+}
+.contentAside2 img{
+    padding-left: 8px;
+}
+
+.childMenu1{
+    
+    position: absolute;
+    top: 25px;
+    display: none;
+
+}
+.childMenu1 li{
+    display: flex;
+    align-items: center;
+}
+.childMenu1 li img{
+    padding-right: 10px;
+}
+.childMenu1 li:last-child{
+    margin-bottom: 0;
+}
+.mobileFeature{
+    padding: 0;
+}
+.mobileFeaturePush{
+    padding-bottom: 140px;
+}
+
+.childMenu2{
+   
+    position: absolute;
+    top: 69px;
+    right: 110px;
+    display: none;
+}
+
+.mobileCompanyPush{
+    padding-bottom: 100px;
+}
+.espcialpush{
+    position: absolute;
+    top: 205px;
+    right: 102px;
+    width: 123px;
+    height: 115px;
+}
+.contentAside3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentAside3 a{
+    text-decoration: none;
+    margin: 15px;
+}
+.buttonRegisterMobile{
+    color: var(--AlmostBlack);
+    background-color: var(--AlmostWhite);
+    font-family: 'Epilogue', sans-serif;
+    border-radius: 12px;
+    padding: 13px 64px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid var(--AlmostBlack);
+}
+
+.inactive{
+    display: none;
+}
+
+
+@media (min-width:840px ) {
+    .menuMobile{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: none;
+    }
+    .contentMenu{
+        display: flex;
+        list-style: none;
+        padding-left: 42px;
+        align-items: center;
+        gap: 36px;
+    }
+    .mobile-main{
+        display: none;
+    }
+    .loginOptions{
+        display: flex;
+        list-style: none;
+        padding-right: 22px;
+        align-items: center;
+        gap: 36px;
+    }
+    .loginOptions li:last-child{
+        border: 1px solid var(--AlmostBlack);
+        border-radius: 12px;
+        padding: 12px;
+        cursor: pointer;
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .content2{
+        text-align: start;
+        align-items: flex-start;
+        width: 50%;
+    }
+    .content2 h1{
+    font-size:5em;
+    margin-left: 0;
+    }
+    .desktop-main {
+        display: block;
+        width: 100%;
+        height:85vh;
+        max-width: 800px;
+    }
+    .content2 p{
+        text-align: left;
+        margin-left: 0;
+        width: 70%;
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    .logosbotton{
+        margin-top: 40px;
+        justify-content: space-between;
+        width: 70% ;
+    }
+    .logosbotton img{
+        height: 20px;
+    }
+    .buttonLearn{
+        margin-left: 0;
+    }
+
+}

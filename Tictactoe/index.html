@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="welcomeScreen">
+        <div class="simbols">
+            <img src="./assets/icon-x.svg" alt="X" class="xSimbol"><img src="./assets/icon-o.svg" alt="O" class="oSimbol">
+        </div>
+        <div class=""></div>
+        <div class="simbolSelection">
+            <div class="top"><h1>PICK PLAYER 1'S MARK</h1></div>
+            <div class="middle">
+                <button class="iconButtons"><img src="./assets/icon-x-outline.svg" alt="X"></button>
+                <button class="iconButtons"><img src="./assets/icon-o-outline.svg" alt="O"></button>
+            </div>
+            <div class="botton"><h2>REMEBER: X GOESS FIRST</h2></div>
+        </div>
+        <div class="wButtons">
+            <div class="buttons topButton">
+                <BUTton>NEW GAME (VS CPU)</BUTton>
+            </div>
+            <div class="buttons bottonButton">
+                <BUtton>NEW GAME (VS PLAYER)</BUtton>
+            </div>
+        </div>
+    </div>
+    <div class="container inactive">
+        <div class="top">
+            <div class="simbols"></div>
+            <div class="turn"></div>
+            <div class="restartButton"></div>
+        </div>
+        <div class="middle">
+            <div><button class="screen" id="one"></button></div>
+            <div><button class="screen" id="two"></button><</div>
+            <div><button class="screen" id="tree"></button><</div>
+
+            <div><button class="screen" id="four"></button><</div>
+            <div><button class="screen" id="five"></button><</div>
+            <div><button class="screen" id="six"></button><</div>
+
+            <div><button class="screen" id="seven"></button><</div>
+            <div><button class="screen" id="eight"></button><</div>
+            <div><button class="screen" id="nine"></button><</div>    
+        </div>
+        <div class="botton"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

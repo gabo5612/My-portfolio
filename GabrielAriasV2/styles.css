@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+:root{
+  --Background: #141414;
+  --Text:  #d1d1d1;
+  --Footer: #383838;
+  --underTextColor:#87C988;
+
+  
+}
+.lightMode{
+  --Background: #d1d1d1;
+  --Text:  #141414;
+  --Footer: #8d8d8d;
+  transition: all 1s ease-out;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--Text);
+  background-color: var(--Background);
+  transition: all 1s ease-out;
+}
+header{
+  height: 100vh;
+  
+}
+nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.nav-icon{
+  width: 25px;
+  padding: 0 7px;
+}
+#darkModeIcon{
+  width: 30px;
+  padding: 0 3px;
+}
+.filter{
+  filter: invert(1);
+}
+
+
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  margin: 0 20px;
+}
+.nav-content-right{
+  display: flex;
+  justify-content: center;
+}
+.nav-content-right img{
+  margin-top: 12px;
+  width: 200px;
+  
+  border-radius: 12px;
+}
+.filterImg{
+  filter:grayscale(1);
+}
+.nav-content-left{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    align-items: center;
+}
+.nav-content-left h1{
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  
+}
+.name{
+  border-bottom: 2px solid var(--underTextColor);
+}
+.nav-content-left h3{
+  font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+.contact-me{
+  text-decoration: none;
+  color: var(--Text);
+  border-bottom: 1px solid var(--underTextColor);
+  font-weight: 200;
+  transition: all 1s ease-out;
+
+}
+
+.contact-me:hover{
+  transition-delay: 1s;
+  transition: all 1s ease-out;
+  transform: scale(1.2);
+}
+
+.Gabriels-info{
+  height: 50vh;
+  display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.info-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.info-img img{
+  width: 60px;
+  transition: all 1s ease-out;
+}
+.info-img img:hover{
+  transition-delay: 0.5s;
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
+  
+}
+.i-speak-img img:nth-child(3){
+  object-fit: cover;
+}
+.i-speak-img img:last-child{
+  filter: invert(1);
+  object-fit: cover;
+}
+.i-use-img img:first-child{
+  filter: invert(1);
+}
+.proyects{
+  margin-bottom: 20px;
+}
+.proyects-title-text{
+  margin-top: 20px;
+  font-size: 1.3em;
+ 
+}
+.proyect-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap:15px;
+  place-content: center;
+}
+.proyect-card{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.proyect-text{
+  text-align: center;
+}
+
+.proyect-img img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 12px;
+  
+  transition: all 0.4s ease-out;
+  transition-delay: 0.25s;
+
+
+  
+}
+.proyect-img img:hover{
+  filter: blur(0px);
+  transition-delay: 0.1s;
+  transition: all 0.1s ease-out;
+}
+footer{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Footer);
+}
+.footer-icons ul{
+  list-style: none;
+  display: flex;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 6px;
+ 
+}
+.form-text{
+  text-align: center;
+  font-size: 1.2em;
+
+}
+.form input,textarea{
+  border-radius: 12px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.07);
+  padding: 4px 0;
+  resize: none;
+}
+.form textarea{
+  padding: 10px;
+}
+.form button{
+  margin:10px 0;
+  border: none;
+  border-radius: 12px;
+  padding: 4px 0;
+  background-color: rgba(240, 248, 255, 0.07);
+  color: var(--Text);
+  font-weight: 300;
+}
+.form input:hover{
+  background-color: rgba(240, 248, 255, 0.238);
+}
+.form textarea:hover{
+  background-color: rgba(240, 248, 255, 0.238);
+}
+.form button:hover{
+  background-color: rgba(240, 248, 255, 0.238);
+}
+#paltext{
+  font-size: 0.8em;
+}
+
+.inactive{
+  display: none;
+}
+
+@media (min-width:680px) {
+  .inactive{
+    display:block;
+  }
+  header{
+    margin: 50px 100px 0 100px;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  .nav-icon{
+    margin-left:  18px;
+  }
+  .nav-content{
+    flex-direction: row;
+    margin: 0 5px;
+  }
+  .nav-content-right img {
+    width: 500px;
+  }
+  .nav-content-left{
+    padding-top: 200px;
+    justify-content: space-around;
+    height: 50vh;
+  }
+  .nav-content-left h3{
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    width: 450px;
+  }
+  .nav-content-left h1 {
+  font-size: 3em;
+  }
+  .info-img{
+    justify-content: center;
+    gap: 50px;
+  }
+  .info-text{
+    font-size: 2em;
+  }
+  .proyect-img img{
+    height: 400px;
+    width: 400px;
+    filter: blur(4px);
+  }
+  .proyect3, .proyect4{
+    grid-row: span 2;
+    
+  }
+
+
+  .proyect-container{
+    grid-template-columns: repeat(auto-fill, 400px);
+  }
+}
+@media (min-width:1400px){
+  .proyect3 img, .proyect4 img{
+    height: 850px;
+    object-fit: fill;
+  }
+}
