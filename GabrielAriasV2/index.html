@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/hi Gabo.webp">
     <title>Gabriel Arias porfolio</title>
@@ -13,7 +14,7 @@
         <nav>
             <div class="left-nav inactive">
 
-            <h2>Gabriel </h2>
+            <h2>Gabriel Arias</h2>
         </div>
             <div class="right-nav social-icons">
             <ul>
@@ -60,6 +61,8 @@
             <img src="./assets/css3.svg" alt="Css logo">
             <img src="./assets/js.svg" alt="JavaScript logo">
             <img src="./assets/logo-wordpress.svg" alt="WordPress logo" id="wordpress">
+            <img src="./assets/React-icon.svg" alt="React logo" class="specialLogo">
+            <img src="./assets/Bootstrap_logo.svg" alt="Bootstrap logo" class="specialLogo">
         </div>
         </div>
         <div class="i-use">
@@ -71,7 +74,8 @@
                 <img src="./assets/VisualStudioCode.svg" alt="VisualStudioCode logo">
                 <img src="./assets/cpanel.svg" alt="cPanel logo">
                 <img src="./assets/elementor-icon.svg" alt="Elementor logo">
-
+                <img src="./assets/webpackLogo.png" alt="Webpack">
+                <img src="./assets/babel.png" alt="Babel">
                 
             </div>
 
@@ -81,87 +85,154 @@
                 <h2>I'm learning</h2>
             </div>
             <div class="info-img im-learning-img">
-                <img src="./assets/React-icon.svg" alt="React logo">
                 <img src="./assets/Vue.js_Logo_2.svg" alt="vue logo">
                 <img src="./assets/Typescript_logo_2020.svg" alt="TypeScript logo">
-                <img src="./assets/Bootstrap_logo.svg" alt="Bootstrap logo">
+                <img src="./assets/react-native.svg" alt="React Native">
             </div>
 
         </div>
     </section>
-    <section class="proyects">
-        <div class="info-text proyects-title-text">
-            <h2>Proyects</h2>
-        </div>
-        <div class="proyect-container">
-            <div class="proyect-card proyect1">
-            <div class="proyect-text">
-                <h2>Product card</h2>
-            </div>
-            <div class="proyect-img">
-               <a href="https://gabo5612.github.io/My-portoflio/product-preview-card-component-main/"><img src="./assets/Product-img.png" alt="Product image"></a>
-            </div>
-        </div>
-            <div class="proyect-card proyect2">
-                <div class="proyect-text">
-                    <h2>Landing page</h2>
-                </div>
-                <div class="proyect-img">
-                    <a href="https://gabo5612.github.io/My-portoflio/intro-section-with-dropdown-navigation-main/"><img src="./assets/landing page.png" alt="Landing page"></a>       
-                </div>
-        </div>
-            <div class="proyect-card proyect3">
-                <div class="proyect-text">
-                    <h2>Tip calculator</h2>
-                </div>
-                <div class="proyect-img">
-                    <a href="https://gabo5612.github.io/My-portoflio/tip-calculator-app-main/"><img src="./assets/tipcalculator.JPG" alt="Tip calculator"></a>
-                </div>
-        </div>
-            <div class="proyect-card proyect4">
-                <div class="proyect-text">
-                    <h2>Iphone calculator</h2>
-                </div>
-                <div class="proyect-img">
-                    <a href="https://gabo5612.github.io/My-portoflio/Calculator/"><img src="./assets/iphoneCalculator.JPG" alt="Iphone calculator"></a>
-                </div>
-        </div>
-            <div class="proyect-card proyect5">
-                <div class="proyect-text">
-                    <h2>NTF card</h2>
-                </div>
-                <div class="proyect-img">
-                    <a href="https://gabo5612.github.io/My-portoflio/nft-preview-card-component-main/"><img src="./assets/ntfcard.JPG" alt="NTF card image"></a>
-                </div>
-            </div>
-            <div class="proyect-card proyect6">
-                <div class="proyect-text">
-                    <h2 id="paltext">Polindromo(working on it)</h2>
-                </div>
-                <div class="proyect-img">
-                    <img src="./assets/working Gabo.webp" alt="Polindromo">
-                </div>
-            </div>
-            <!--
-            <div class="proyect-card proyect7">
-                <div class="proyect-text">
-                    <h2>Online Store</h2>
-                </div>
-                <div class="proyect-img">
-                    <img src="./assets/landing page.png" alt="">
-                </div>
-            </div>
-              <div class="proyect-card proyect8">
-                <div class="proyect-text">
-                    <h2>Online Store</h2>
-                </div>
-                <div class="proyect-img">
-                    <img src="./assets/landing page.png" alt="">
-                </div>
-            </div>
-            -->
+    <section class="projects">
+          
+        <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                     <a href="https://gabo5612.github.io/My-portoflio/product-preview-card-component-main/" target="_blank"><img src="./assets/Product Card Desktop.PNG" id="productCard" alt="Product image" class="projectImg" ></a>
+                    
+                        <div class="project-text">
+                            <ul>
+                                <li>Product Card</li>
+                                <li>Made with: HTML5, CSS3, JavaScript</li>
+                               
+                            </ul>
+                            
+                        </div>
+                        
+                    
+                </li>
+                <li class="splide__slide">
+                    <a href="https://gabo5612.github.io/My-portoflio/intro-section-with-dropdown-navigation-main/" target="_blank"><img src="./assets/landing page desktop.PNG" id="landingPage" alt="Product image" class="projectImg" ></a>
+                   
+                       <div class="project-text">
+                           <ul>
+                               <li>Landing Page</li>
+                               <li>Made with: HTML5, CSS3, JavaScript</li>
+                              
+                           </ul>
+                           
+                       </div>
+                       
+                   
+               </li>
+               <li class="splide__slide">
+                <a href="https://gabo5612.github.io/My-portoflio/tip-calculator-app-main" target="_blank"><img src="./assets/tipCalculatorDesktop.PNG" id="tipCalculator" alt="Product image" class="projectImg" ></a>
+               
+                   <div class="project-text">
+                       <ul>
+                           <li>SPLITTER</li>
+                           <li>Made with: HTML5, CSS3, JavaScript</li>
+                          
+                       </ul>
+                       
+                   </div>
+                   
+               
+           </li>
+           <li class="splide__slide">
+            <a href="https://gabo5612.github.io/My-portoflio/Calculator/" target="_blank"><img src="./assets/IphoneCalculatorDektop.PNG" id="iphoneCalculator" alt="Product image" class="projectImg" ></a>
+           
+               <div class="project-text whiteText">
+                   <ul>
+                       <li>Iphone calculator clone</li>
+                       <li>Made with: HTML5, CSS3, JavaScript</li>
+                      
+                   </ul>
+                   
+               </div>
+               
+           
+       </li>
+       <li class="splide__slide">
+        <a href="https://gabo5612.github.io/My-portoflio/sunnyside-agency-landing-page-main/" target="_blank"><img src="./assets/SunnysideDesktop.PNG" id="sunnySide" alt="SunnySide" class="projectImg" ></a>
+       
+           <div class="project-text">
+               <ul>
+                   <li>SunnySide</li>
+                   <li>Made with: HTML5, CSS3, JavaScript</li>
+                  
+               </ul>
+               
+           </div>
+           
+       
+    </li>
+    <li class="splide__slide">
+        <a href="https://gabo5612.github.io/ip-address-location/" target="_blank"><img src="./assets/IPAddressLocationDesktop.PNG" id="ipLocation" alt="IP Address Location" class="projectImg" ></a>
+       
+           <div class="project-text">
+               <ul>
+                   <li>IP Adress Location</li>
+                   <li>Made with: HTML5, CSS3, JavaScript, API Rest</li>
+                  
+               </ul>
+               
+           </div>
+           
+       
+    </li>
+    <li class="splide__slide">
+        <a href="https://gabo5612.github.io/ResultSumaryReact/" target="_blank"><img src="./assets/ResultSumaryDesktop.PNG" id="resultSumary" alt="Result Sumary" class="projectImg" ></a>
+       
+           <div class="project-text">
+               <ul>
+                   <li>Result Sumary</li>
+                   <li>Made with: HTML5, CSS3, JavaScript, React.JS</li>
+                  
+               </ul>
+               
+           </div>
+           
+       
+    </li>
+    <li class="splide__slide">
+        <a href="https://gabo5612.github.io/space-tourism-React/" target="_blank"><img src="./assets/SpacetourismDesktop.PNG" id="spaceTourism" alt="Space Tourism" class="projectImg" ></a>
+       
+           <div class="project-text whiteText">
+               <ul>
+                   <li>Space Tourism</li>
+                   <li>Made with: HTML5, CSS3, JavaScript, React.js, ReactResponsive</li>
+                  
+               </ul>
+               
+           </div>
+           
+       
+    </li>
+    <li class="splide__slide">
+        <a href="https://gabo5612.github.io/NewHomePage/" target="_blank"><img src="./assets/NewsWebsiteDesktop.PNG" id="newsHomePage" alt="NewHomePage" class="projectImg" ></a>
+       
+           <div class="project-text">
+               <ul>
+                   <li>News HomePage</li>
+                   <li>Made with: HTML5, CSS3, JavaScript, React.js, ReactResponsive</li>
+                  
+               </ul>
+               
+           </div>
+           
+       
+    </li>
 
-        </div>
+    
+  
+                
+                
+              </ul>
+            </div>
+            
+      
+          </div>
     </section>
     <footer id="footer">
         <div class="form-container">
@@ -200,7 +271,7 @@
             </ul>
             
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -46,7 +46,7 @@ body {
   transition: all 1s ease-out;
 }
 header{
-  height: 100vh;
+  height: 100dvh;
   
 }
 nav{
@@ -132,7 +132,7 @@ nav ul{
 }
 
 .Gabriels-info{
-  height: 50vh;
+  height: 50dvh;
   display: flex;
     
     flex-direction: column;
@@ -151,6 +151,10 @@ nav ul{
   justify-content: space-around;
 
 }
+.specialLogo{
+  filter: inherit;
+  object-fit: contain;
+}
 .info-img img{
   width: 60px;
   transition: all 1s ease-out;
@@ -164,52 +168,55 @@ nav ul{
 .i-speak-img img:nth-child(3){
   object-fit: cover;
 }
-.i-speak-img img:last-child{
-  filter: invert(1);
-  object-fit: cover;
-}
+
 .i-use-img img:first-child{
   filter: invert(1);
 }
-.proyects{
-  margin-bottom: 20px;
+#wordpress{
+  filter: invert(1);
 }
-.proyects-title-text{
-  margin-top: 20px;
-  font-size: 1.3em;
- 
-}
-.proyect-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 150px);
-  gap:15px;
-  place-content: center;
-}
-.proyect-card{
+.splide__slide{
   display: flex;
-  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
 }
-.proyect-text{
+.splide__slide img{
+  position: relative;
+  filter: blur(5px);
+  transition: 0.3s;
+}
+
+.project-text ul li{
+  z-index: 3;
+  opacity: 1;
+  transform: translateY(-18rem);
+  transition: 0.3s;
+  list-style: none;
   text-align: center;
+  color: #000000;
+}
+.whiteText ul li{
+  color: white;
+}
+.splide__slide:hover .project-text ul li{
+  transition: 0.3s;
+  opacity: 0;
+}
+.splide__slide img:hover{
+  transition: 0.3s;
+  filter:none
 }
 
-.proyect-img img{
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 12px;
-  
-  transition: all 0.4s ease-out;
-  transition-delay: 0.25s;
-
-
-  
+.projectImg{
+  height: 500px;
+  margin-top: 100px;
+  border-radius: 6px;
 }
-.proyect-img img:hover{
-  filter: blur(0px);
-  transition-delay: 0.1s;
-  transition: all 0.1s ease-out;
+.project-text{
+  width: 250px;
 }
 footer{
   height: 50vh;
@@ -270,8 +277,13 @@ footer{
 .inactive{
   display: none;
 }
+.my-slider-progress {
+  background: #ccc;
+}
 
-@media (min-width:680px) {
+
+
+@media (min-width:1000px) {
   .inactive{
     display:block;
   }
@@ -294,7 +306,7 @@ footer{
   .nav-content-left{
     padding-top: 200px;
     justify-content: space-around;
-    height: 50vh;
+    height: 50dvh;
   }
   .nav-content-left h3{
     font-size: 2em;
@@ -312,24 +324,5 @@ footer{
   .info-text{
     font-size: 2em;
   }
-  .proyect-img img{
-    height: 400px;
-    width: 400px;
-    filter: blur(4px);
-  }
-  .proyect3, .proyect4{
-    grid-row: span 2;
-    
-  }
 
-
-  .proyect-container{
-    grid-template-columns: repeat(auto-fill, 400px);
-  }
-}
-@media (min-width:1400px){
-  .proyect3 img, .proyect4 img{
-    height: 850px;
-    object-fit: fill;
-  }
 }
