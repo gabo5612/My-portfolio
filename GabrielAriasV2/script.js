@@ -19,6 +19,7 @@ const ipLocation = document.querySelector("#ipLocation");
 const resultSumary = document.querySelector("#resultSumary");
 const spaceTourism = document.querySelector("#spaceTourism");
 const newsHomePage = document.querySelector("#newsHomePage");
+lazyload();
 
 toggleTheme.addEventListener("click", () => {
   document.body.classList.toggle("lightMode");
@@ -58,14 +59,7 @@ var splide = new Splide(".splide", {
   rewind: true,
 });
 
-var bar = splide.root.querySelector(".my-carousel-progress-bar");
 
-// Updates the bar width whenever the carousel moves:
-splide.on("mounted move", function () {
-  var end = splide.Components.Controller.getEnd() + 1;
-  var rate = Math.min((splide.index + 1) / end, 1);
-  bar.style.width = String(100 * rate) + "%";
-});
 
 splide.mount();
 
