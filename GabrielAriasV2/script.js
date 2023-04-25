@@ -69,21 +69,15 @@ splide.on("mounted move", function () {
 
 splide.mount();
 
-window.addEventListener("resize", function () {
+
+
+window.addEventListener("load", function() {
+
+  
   var newWidth = window.innerWidth;
-  var newHeight = window.innerHeight;
-  if (newWidth < 1000) {
-    productCard.src = "./assets/Product Card mobile.PNG";
-    landingPage.src='./assets/landing page mobile.PNG'
-    tipCalculator.src='./assets/tipCalculatorMobile.PNG'
-    iphoneCalculator.src='./assets/IphoneCalculatorMobile.PNG'
-    sunnySide.src='./assets/SunnysideMobile.PNG'
-    ipLocation.src='./assets/IPAddressLocationMobile.PNG'
-    resultSumary.src='./assets/ResultSumaryMobile.PNG'
-    spaceTourism.src='./assets/SpacetourismMobile.PNG'
-    newsHomePage.src='./assets/NewsWebsiteMobile.PNG'
-  } else {
-    productCard.src = "./assets/Product Card Desktop.PNG";
+ 
+  if (newWidth > 1000) {
+    productCard.src = "./assets/productCardDesktop.PNG";
     landingPage.src='./assets/landing page Desktop.PNG'
     tipCalculator.src='./assets/tipCalculatorDesktop.PNG'
     iphoneCalculator.src='./assets/IphoneCalculatorDektop.PNG'
@@ -92,5 +86,43 @@ window.addEventListener("resize", function () {
     resultSumary.src='./assets/ResultSumaryDesktop.PNG'
     spaceTourism.src='./assets/SpacetourismDesktop.PNG'
     newsHomePage.src='./assets/NewsWebsiteDesktop.PNG'
+
+  } else {
+    productCard.src = "./assets/productCardMobile.PNG";
+    landingPage.src='./assets/landing page mobile.PNG'
+    tipCalculator.src='./assets/tipCalculatorMobile.PNG'
+    iphoneCalculator.src='./assets/IphoneCalculatorMobile.PNG'
+    sunnySide.src='./assets/SunnysideMobile.PNG'
+    ipLocation.src='./assets/IPAddressLocationMobile.PNG'
+    resultSumary.src='./assets/ResultSumaryMobile.PNG'
+    spaceTourism.src='./assets/SpacetourismMobile.PNG'
+    newsHomePage.src='./assets/NewsWebsiteMobile.PNG'
   }
+
 });
+window.addEventListener('resize', function(){
+  var newWidth = window.innerWidth;
+ 
+  if (newWidth > 1000) {
+    productCard.src = "./assets/productCardDesktop.PNG";
+    landingPage.src='./assets/landing page Desktop.PNG'
+    tipCalculator.src='./assets/tipCalculatorDesktop.PNG'
+    iphoneCalculator.src='./assets/IphoneCalculatorDektop.PNG'
+    sunnySide.src='./assets/SunnysideDesktop.PNG'
+    ipLocation.src='./assets/IPAddressLocationDesktop.PNG'
+    resultSumary.src='./assets/ResultSumaryDesktop.PNG'
+    spaceTourism.src='./assets/SpacetourismDesktop.PNG'
+    newsHomePage.src='./assets/NewsWebsiteDesktop.PNG'
+
+  } else {
+    productCard.src = "./assets/productCardMobile.PNG";
+    landingPage.src='./assets/landing page mobile.PNG'
+    tipCalculator.src='./assets/tipCalculatorMobile.PNG'
+    iphoneCalculator.src='./assets/IphoneCalculatorMobile.PNG'
+    sunnySide.src='./assets/SunnysideMobile.PNG'
+    ipLocation.src='./assets/IPAddressLocationMobile.PNG'
+    resultSumary.src='./assets/ResultSumaryMobile.PNG'
+    spaceTourism.src='./assets/SpacetourismMobile.PNG'
+    newsHomePage.src='./assets/NewsWebsiteMobile.PNG'
+  }
+})

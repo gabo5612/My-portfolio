@@ -148,7 +148,7 @@ nav ul{
 .info-img {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
 }
 .specialLogo{
@@ -324,5 +324,6 @@ footer{
   .info-text{
     font-size: 2em;
   }
+
 
 }
