@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
  
   if (newWidth > 1000) {
     productCard.src = "./assets/productCardDesktop.PNG";
-    landingPage.src='./assets/landing page Desktop.PNG'
+    landingPage.src='./assets/landing page desktop.PNG'
     tipCalculator.src='./assets/tipCalculatorDesktop.PNG'
     iphoneCalculator.src='./assets/IphoneCalculatorDektop.PNG'
     sunnySide.src='./assets/SunnysideDesktop.PNG'
@@ -105,7 +105,7 @@ window.addEventListener('resize', function(){
  
   if (newWidth > 1000) {
     productCard.src = "./assets/productCardDesktop.PNG";
-    landingPage.src='./assets/landing page Desktop.PNG'
+    landingPage.src='./assets/landing page desktop.PNG'
     tipCalculator.src='./assets/tipCalculatorDesktop.PNG'
     iphoneCalculator.src='./assets/IphoneCalculatorDektop.PNG'
     sunnySide.src='./assets/SunnysideDesktop.PNG'
