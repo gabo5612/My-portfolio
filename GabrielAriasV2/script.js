@@ -19,6 +19,7 @@ const ipLocation = document.querySelector("#ipLocation");
 const resultSumary = document.querySelector("#resultSumary");
 const spaceTourism = document.querySelector("#spaceTourism");
 const newsHomePage = document.querySelector("#newsHomePage");
+const jobListing=document.querySelector("#jobListing")
 lazyload();
 
 toggleTheme.addEventListener("click", () => {
@@ -60,7 +61,6 @@ var splide = new Splide(".splide", {
 });
 
 
-
 splide.mount();
 
 
@@ -80,6 +80,7 @@ window.addEventListener("load", function() {
     resultSumary.src='./assets/ResultSumaryDesktop.PNG'
     spaceTourism.src='./assets/SpacetourismDesktop.PNG'
     newsHomePage.src='./assets/NewsWebsiteDesktop.PNG'
+    jobListing.src='./assets/jobLisintDesktop.PNG'
 
   } else {
     productCard.src = "./assets/productCardMobile.PNG";
@@ -91,6 +92,7 @@ window.addEventListener("load", function() {
     resultSumary.src='./assets/ResultSumaryMobile.PNG'
     spaceTourism.src='./assets/SpacetourismMobile.PNG'
     newsHomePage.src='./assets/NewsWebsiteMobile.PNG'
+    jobListing.src='./assets/JobListingMobile.PNG'
   }
 
 });
@@ -107,6 +109,7 @@ window.addEventListener('resize', function(){
     resultSumary.src='./assets/ResultSumaryDesktop.PNG'
     spaceTourism.src='./assets/SpacetourismDesktop.PNG'
     newsHomePage.src='./assets/NewsWebsiteDesktop.PNG'
+    jobListing.src='./assets/jobLisintDesktop.PNG'
 
   } else {
     productCard.src = "./assets/productCardMobile.PNG";
@@ -118,5 +121,6 @@ window.addEventListener('resize', function(){
     resultSumary.src='./assets/ResultSumaryMobile.PNG'
     spaceTourism.src='./assets/SpacetourismMobile.PNG'
     newsHomePage.src='./assets/NewsWebsiteMobile.PNG'
+    jobListing.src='./assets/JobListingMobile.PNG'
   }
 })
