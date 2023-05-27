@@ -194,7 +194,7 @@ nav ul{
 .project-text ul li{
   z-index: 3;
   opacity: 1;
-  transform: translateY(-18rem);
+  transform: translateY(-25rem);
   transition: 0.3s;
   list-style: none;
   text-align: center;
@@ -213,9 +213,11 @@ nav ul{
 }
 
 .projectImg{
-  height: 500px;
+  height: 700px;
   margin-top: 100px;
-  border-radius: 6px;
+
+
+  border-radius: 12px;
 }
 .project-text{
   width: 250px;
@@ -290,10 +292,13 @@ footer{
     display:block;
   }
   header{
-    margin: 50px 100px 0 100px;
+    margin: 50px 220px 0 220px;
   }
   nav{
     justify-content: space-between;
+  }
+  .left-nav h2{
+    font-size: 2rem;
   }
   .nav-icon{
     margin-left:  18px;
@@ -303,7 +308,8 @@ footer{
     margin: 0 5px;
   }
   .nav-content-right img {
-    width: 500px;
+    width: 40dvw;
+    max-width: 600px;
   }
   .nav-content-left{
     padding-top: 200px;
