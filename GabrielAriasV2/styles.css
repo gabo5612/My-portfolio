@@ -177,6 +177,9 @@ nav ul{
 #wordpress{
   filter: invert(1);
 }
+#nextJs{
+  filter: invert(1);
+}
 .splide__slide{
   display: flex;
   align-items: center;

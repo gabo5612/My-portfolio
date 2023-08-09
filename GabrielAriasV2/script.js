@@ -9,7 +9,7 @@ const linked2 = document.querySelector(".linked2");
 const email2 = document.querySelector(".email2");
 const profile = document.querySelector("#profilePic");
 const github = document.querySelector("#github");
-const wordpres = document.querySelector("#wordpress");
+const wordpress = document.querySelector("#wordpress");
 const productCard = document.querySelector("#productCard");
 const landingPage = document.querySelector("#landingPage");
 const tipCalculator = document.querySelector("#tipCalculator");
@@ -20,6 +20,7 @@ const resultSumary = document.querySelector("#resultSumary");
 const spaceTourism = document.querySelector("#spaceTourism");
 const newsHomePage = document.querySelector("#newsHomePage");
 const jobListing=document.querySelector("#jobListing")
+const nextJs=document.querySelector('#nextJs');
 lazyload();
 
 toggleTheme.addEventListener("click", () => {
@@ -37,7 +38,8 @@ toggleTheme.addEventListener("click", () => {
     email2.classList.remove("filter");
     profile.classList.remove("filterImg");
     github.style.filter = "none";
-    wordpres.style.filter = "none";
+    wordpress.style.filter = "none";
+    nextJs.style.filter="none";
   } else {
     toggleTheme.src = "./assets/light_mode.svg";
     toggleTheme.classList.add("filter");
@@ -51,7 +53,8 @@ toggleTheme.addEventListener("click", () => {
     email2.classList.add("filter");
     profile.classList.add("filterImg");
     github.style.filter = "invert(1)";
-    wordpres.style.filter = "invert(1)";
+    wordpress.style.filter = "invert(1)";
+    nextJs.style.filter="invert(1)";
   }
 });
 
